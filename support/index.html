@@ -3,41 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Espresso Pro Support</title>
-  <meta name="description" content="Support information for Espresso Pro.">
+  <title>Espresso Support: Help for Keeping Your Mac Awake</title>
+  <meta name="description" content="Support, troubleshooting, and contact information for Espresso, the macOS menu bar app that keeps your Mac awake during long tasks.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://espressoawake.com/support/">
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-  <main class="page">
-    <nav>
-      <a href="../">Overview</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="../" aria-label="Espresso home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Espresso</span>
+    </a>
+    <div class="nav-links">
+      <a href="../#workflow">Workflow</a>
+      <a href="../#features">Features</a>
+      <a href="../#privacy">Privacy</a>
+      <a href="./" aria-current="page">Support</a>
+    </div>
+    <a class="nav-cta" href="https://apps.apple.com/app/id6773598626?mt=12">Download</a>
+  </nav>
+
+  <main id="main" class="support-page">
+    <section class="support-hero" data-reveal>
+      <div>
+        <p class="eyebrow">Espresso Support</p>
+        <h1>Help for keeping your Mac awake.</h1>
+        <p class="lead">Find quick checks for menu bar visibility, launch at login, notifications, and expected macOS sleep behavior.</p>
+        <div class="actions" aria-label="Support actions">
+          <a class="button primary" href="https://github.com/zhuyu99/espresso-pages/issues">Open a support issue</a>
+          <a class="button secondary" href="../privacy/">Privacy policy</a>
+        </div>
+      </div>
+      <aside class="support-note">
+        <p class="eyebrow">Before you post</p>
+        <p>Please do not include private account, payment, device serial number, or personal data in public GitHub issues.</p>
+      </aside>
+    </section>
+
+    <section class="support-grid" aria-label="Support categories" data-reveal>
+      <article class="support-card">
+        <span class="support-icon" aria-hidden="true"></span>
+        <h2>Menu bar</h2>
+        <p>If Espresso is not visible, check the macOS menu bar near the system status items and any hidden menu bar area.</p>
+      </article>
+      <article class="support-card">
+        <span class="support-icon support-icon-alt" aria-hidden="true"></span>
+        <h2>Launch at login</h2>
+        <p>Open Espresso settings, toggle launch at login off, then turn it on again to refresh the macOS login item.</p>
+      </article>
+      <article class="support-card">
+        <span class="support-icon support-icon-ring" aria-hidden="true"></span>
+        <h2>Notifications</h2>
+        <p>Check macOS System Settings &gt; Notifications &gt; Espresso if session-end notifications do not appear.</p>
+      </article>
+    </section>
+
+    <section class="support-layout" data-reveal>
+      <div class="support-panel">
+        <p class="eyebrow">Common checks</p>
+        <h2>What to check first.</h2>
+        <ul class="check-list">
+          <li>Confirm Espresso is running from the menu bar, not as a regular Dock app.</li>
+          <li>Start a timed session and watch for the visible countdown before leaving a long task.</li>
+          <li>Review notification permission if you expect a local alert when the countdown ends.</li>
+          <li>If your Mac sleeps after lock, logout, or shutdown, that can be normal macOS policy.</li>
+        </ul>
+      </div>
+      <div class="support-panel contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Still stuck?</h2>
+        <p>Open a public GitHub issue for support requests, bug reports, or product feedback.</p>
+        <a class="button primary" href="https://github.com/zhuyu99/espresso-pages/issues">Go to GitHub Issues</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Copyright 2026 Yu Zhu. All rights reserved.</p>
+    <div>
       <a href="./">Support</a>
       <a href="../privacy/">Privacy</a>
-    </nav>
-
-    <header>
-      <h1>Espresso Pro Support</h1>
-      <p class="lead">Help and troubleshooting for Espresso Pro on macOS.</p>
-    </header>
-
-    <section>
-      <h2>Common Checks</h2>
-      <ul>
-        <li>If Espresso Pro is not visible, check the macOS menu bar near the system status items.</li>
-        <li>If launch at login does not work, open Espresso Pro settings and toggle launch at login off and on again.</li>
-        <li>If notifications do not appear, check macOS System Settings &gt; Notifications &gt; Espresso Pro.</li>
-        <li>If your Mac still sleeps after locking the screen, this is expected. macOS may apply stricter policies after lock, logout, or shutdown.</li>
-      </ul>
-    </section>
-
-    <section class="panel">
-      <h2>Contact</h2>
-      <p>For support requests, bug reports, or feedback, open an issue on GitHub:</p>
-      <p><a href="https://github.com/zhuyu99/espresso-pages/issues">https://github.com/zhuyu99/espresso-pages/issues</a></p>
-      <p class="muted">Please do not include private account, payment, or device information in public issues.</p>
-    </section>
-
-    <footer>Copyright 2026 yu zhu. All rights reserved.</footer>
-  </main>
+    </div>
+  </footer>
+  <script src="../assets/site.js" defer></script>
 </body>
 </html>
