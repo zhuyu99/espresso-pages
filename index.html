@@ -12,6 +12,7 @@
   <meta property="og:url" content="https://espressoawake.com/">
   <meta property="og:image" content="https://espressoawake.com/assets/images/espresso-hero.jpg">
   <link rel="canonical" href="https://espressoawake.com/">
+  <link rel="preload" as="image" href="assets/images/espresso-hero.jpg">
   <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
   {
@@ -68,160 +69,168 @@
     ]
   }
   </script>
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <nav class="site-nav" aria-label="Primary navigation">
     <a class="brand" href="./" aria-label="Espresso home">
       <span class="brand-mark" aria-hidden="true"></span>
       <span>Espresso</span>
     </a>
     <div class="nav-links">
-      <a href="#use-cases">Use cases</a>
+      <a href="#workflow">Workflow</a>
       <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
       <a href="support/">Support</a>
-      <a href="privacy/">Privacy</a>
     </div>
+    <a class="nav-cta" href="https://apps.apple.com/app/id6773598626?mt=12">Download</a>
   </nav>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" data-reveal>
       <div class="hero-copy">
         <p class="eyebrow">macOS menu bar sleep prevention</p>
-        <h1>Keep your Mac awake when a task cannot be interrupted.</h1>
-        <p class="lead">Espresso prevents idle sleep during downloads, meetings, builds, uploads, presentations, and remote sessions, then gets out of the way when you are done.</p>
+        <h1>Keep the long task awake.</h1>
+        <p class="lead">Espresso keeps your Mac awake during downloads, meetings, builds, uploads, presentations, and remote sessions. Start a session, watch the countdown, and let normal sleep return when it ends.</p>
         <div class="actions" aria-label="Primary actions">
           <a class="button primary" href="https://apps.apple.com/app/id6773598626?mt=12">Download on the Mac App Store</a>
-          <a class="button secondary" href="#how-it-works">See how it works</a>
+          <a class="button secondary" href="#workflow">See the workflow</a>
         </div>
-        <dl class="hero-facts" aria-label="Product highlights">
-          <div>
-            <dt>Free start</dt>
-            <dd>30-minute wake sessions</dd>
-          </div>
-          <div>
-            <dt>Local-first</dt>
-            <dd>No account or tracking</dd>
-          </div>
-          <div>
-            <dt>Native</dt>
-            <dd>Built for macOS menu bar use</dd>
-          </div>
-        </dl>
+        <div class="hero-cred" aria-label="Product highlights">
+          <span>Free 30-minute sessions</span>
+          <span>No account</span>
+          <span>No tracking</span>
+        </div>
       </div>
-      <figure class="hero-media">
-        <img src="assets/images/espresso-hero.jpg" width="1440" height="900" alt="Premium visual of Espresso keeping a Mac awake from the menu bar">
-      </figure>
-    </section>
 
-    <section class="section intro-grid" aria-label="What Espresso solves">
-      <div>
-        <p class="eyebrow">The problem</p>
-        <h2>Your Mac sleeps at exactly the wrong moment.</h2>
-      </div>
-      <div class="intro-copy">
-        <p>System Settings are too broad for temporary work. Terminal commands are powerful but easy to forget. Espresso gives you a visible, reversible control for one focused job: keep the Mac awake only when you choose.</p>
-      </div>
-    </section>
-
-    <section id="use-cases" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Use cases</p>
-        <h2>Built for the moments people actually search for.</h2>
-      </div>
-      <div class="use-case-grid">
-        <article>
-          <h3>Long downloads and uploads</h3>
-          <p>Keep package downloads, cloud uploads, migrations, backups, and file transfers from pausing while the Mac is idle.</p>
-        </article>
-        <article>
-          <h3>Meetings and presentations</h3>
-          <p>Prevent sleep while screen sharing, presenting slides, running a demo, or waiting in a video call.</p>
-        </article>
-        <article>
-          <h3>Builds and exports</h3>
-          <p>Let Xcode builds, render jobs, data exports, and long-running scripts finish without babysitting the computer.</p>
-        </article>
-        <article>
-          <h3>Remote sessions</h3>
-          <p>Keep remote desktop, SSH-adjacent workflows, lab machines, and monitoring screens active while you work elsewhere.</p>
-        </article>
+      <div class="hero-stage" aria-label="Espresso product preview">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <figure class="app-window main-window tilt-card">
+          <div class="window-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <img src="assets/images/espresso-hero.jpg" width="1440" height="900" alt="Premium visual of Espresso keeping a Mac awake from the menu bar">
+        </figure>
+        <aside class="floating-panel panel-timer" aria-label="Active Espresso session">
+          <span class="panel-kicker">Awake session</span>
+          <strong>29:42</strong>
+          <span>Download protected</span>
+        </aside>
+        <aside class="floating-panel panel-status" aria-label="Espresso privacy status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Local only</span>
+        </aside>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section id="how-it-works" class="section split">
-      <div>
-        <p class="eyebrow">How it works</p>
-        <h2>Start a wake session from the menu bar.</h2>
-        <p>Click Espresso, choose a duration, and keep working. Use a simple 30-minute session for free, or unlock custom and indefinite sessions when you need deeper control.</p>
-        <ul class="check-list">
-          <li>Toggle awake mode directly from the menu bar.</li>
-          <li>Use fixed, custom, or indefinite sessions with Lifetime Unlock.</li>
-          <li>Show remaining time in the menu bar when you want a visible countdown.</li>
-          <li>Let macOS return to normal sleep behavior when the timer ends.</li>
-        </ul>
+    <section class="logo-strip" aria-label="Use cases">
+      <span>Downloads</span>
+      <span>Meetings</span>
+      <span>Builds</span>
+      <span>Uploads</span>
+      <span>Presentations</span>
+      <span>Remote sessions</span>
+    </section>
+
+    <section id="workflow" class="chapter chapter-dark" data-reveal>
+      <div class="chapter-copy">
+        <p class="eyebrow">The workflow</p>
+        <h2>A visible switch for invisible waiting.</h2>
+        <p>System Settings are too broad for a temporary job. Terminal commands are powerful but easy to forget. Espresso gives you one focused control for the moments when sleep would interrupt real work.</p>
+        <div class="feature-pills" aria-label="Workflow highlights">
+          <span>Timed sessions</span>
+          <span>Menu bar countdown</span>
+          <span>Manual stop</span>
+        </div>
       </div>
-      <figure class="screenshot-card">
+      <figure class="showcase-card tilt-card">
         <img src="assets/images/screenshot-keep-awake.jpg" width="1600" height="1000" loading="lazy" alt="Espresso menu bar wake session with a countdown">
       </figure>
     </section>
 
-    <section id="features" class="section screenshot-showcase">
+    <section id="features" class="section feature-board" data-reveal>
       <div class="section-heading">
         <p class="eyebrow">Controls</p>
-        <h2>Small surface, practical controls.</h2>
+        <h2>Small surface. Serious control.</h2>
+        <p>Espresso stays in the menu bar, but gives you the controls a real keep-awake workflow needs.</p>
       </div>
-      <div class="screenshot-grid">
-        <figure>
+      <div class="feature-grid">
+        <article class="feature-card span-two">
+          <div>
+            <p class="eyebrow">Preferences</p>
+            <h3>Default duration, startup behavior, and menu bar status.</h3>
+            <p>Choose how Espresso behaves before the next long task starts.</p>
+          </div>
           <img src="assets/images/screenshot-preferences.jpg" width="1600" height="1000" loading="lazy" alt="Espresso preferences for default duration and startup behavior">
-          <figcaption>Set a default duration and choose whether Espresso starts with macOS.</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/screenshot-automation.jpg" width="1600" height="1000" loading="lazy" alt="Espresso behavior settings for power and lock behavior">
-          <figcaption>Adapt to power changes, battery use, and lock-screen behavior.</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/images/screenshot-pro.jpg" width="1600" height="1000" loading="lazy" alt="Espresso Lifetime Unlock screen with Pro controls">
-          <figcaption>Use Lifetime Unlock for custom sessions, hot keys, login launch, and automation.</figcaption>
-        </figure>
+        </article>
+        <article class="feature-card">
+          <p class="eyebrow">Power aware</p>
+          <h3>Respect battery, lock screen, and display dimming.</h3>
+          <p>Keep wake sessions practical across desk, couch, and travel setups.</p>
+        </article>
+        <article class="feature-card accent-card">
+          <p class="eyebrow">Lifetime Unlock</p>
+          <h3>Custom sessions, hot keys, launch at login, and automation.</h3>
+          <p>Upgrade once when you want deeper control.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section comparison">
-      <div>
+    <section class="section image-story" data-reveal>
+      <figure class="story-image tilt-card">
+        <img src="assets/images/screenshot-automation.jpg" width="1600" height="1000" loading="lazy" alt="Espresso behavior settings for power and lock behavior">
+      </figure>
+      <div class="story-stack">
+        <p class="eyebrow">Automation</p>
+        <h2>Designed for repeatable Mac rituals.</h2>
+        <p>Start a wake session before a long build, screen share, migration, or upload. Espresso keeps the state visible and lets you go back to work.</p>
+        <ul class="check-list">
+          <li>Shortcuts actions for repeatable workflows.</li>
+          <li>Global hot key support with Lifetime Unlock.</li>
+          <li>Local notifications when sessions end.</li>
+          <li>Native StoreKit 2 Lifetime Unlock.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section comparison" data-reveal>
+      <div class="section-heading">
         <p class="eyebrow">Caffeinate alternative</p>
-        <h2>For people who know the Terminal command but want a visible switch.</h2>
+        <h2>For people who know the command, but want a product.</h2>
       </div>
       <div class="comparison-grid">
         <article>
           <h3>Terminal caffeinate</h3>
-          <p>Great for scripts and one-off commands. Less obvious when a session is running, and easy to forget if you only need it occasionally.</p>
+          <p>Excellent for scripts and power users. Less obvious when a session is running, and easy to forget when you only need it occasionally.</p>
         </article>
         <article>
           <h3>Espresso</h3>
-          <p>A native menu bar control with timers, status, preferences, and Shortcuts actions. Designed for daily Mac use without opening Terminal.</p>
+          <p>A native menu bar app with timers, status, preferences, Shortcuts actions, and a clear off switch for everyday Mac workflows.</p>
         </article>
       </div>
     </section>
 
-    <section class="trust-band" aria-label="Privacy and trust">
-      <div class="band-inner trust-band-inner">
-        <div>
-          <p class="eyebrow">Privacy</p>
-          <h2>Local-first by design.</h2>
-        </div>
-        <div class="trust-grid">
-          <p>No account.</p>
-          <p>No analytics.</p>
-          <p>No ads.</p>
-          <p>No tracking.</p>
-          <p>No backend.</p>
-          <p>Preferences stay on your Mac.</p>
-        </div>
+    <section id="privacy" class="privacy-band" data-reveal>
+      <div class="privacy-copy">
+        <p class="eyebrow">Privacy</p>
+        <h2>Nothing leaves your Mac.</h2>
+        <p>Espresso has no account, no ads, no analytics, no telemetry, and no backend service. Preferences stay local.</p>
+      </div>
+      <div class="privacy-grid" aria-label="Privacy promises">
+        <span>No account</span>
+        <span>No tracking</span>
+        <span>No analytics</span>
+        <span>No backend</span>
+        <span>No ads</span>
+        <span>Local settings</span>
       </div>
     </section>
 
-    <section class="section faq">
+    <section class="section faq" data-reveal>
       <div class="section-heading">
         <p class="eyebrow">FAQ</p>
         <h2>Common questions before downloading.</h2>
@@ -240,13 +249,16 @@
       </details>
     </section>
 
-    <section class="final-cta">
-      <div class="band-inner">
+    <section class="final-cta" data-reveal>
+      <div>
         <p class="eyebrow">Ready when you need it</p>
-        <h2>Keep the next long task from falling asleep.</h2>
-        <p>Install Espresso, start a 30-minute wake session for free, and upgrade only if you want custom timers, automation, hot keys, and indefinite sessions.</p>
+        <h2>Install the switch your long tasks were missing.</h2>
+        <p>Start with free 30-minute sessions. Unlock custom timers, automation, hot keys, and indefinite sessions when you need more control.</p>
         <a class="button primary" href="https://apps.apple.com/app/id6773598626?mt=12">Download Espresso</a>
       </div>
+      <figure class="cta-card tilt-card">
+        <img src="assets/images/screenshot-pro.jpg" width="1600" height="1000" loading="lazy" alt="Espresso Lifetime Unlock screen with Pro controls">
+      </figure>
     </section>
   </main>
 
